@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&family=Poppins:wght@100&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100&family=Ubuntu+Condensed&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+}
+
+
+:root {
+    --bg-color: #1f1f21;
+    --text-color: #fff;
+    --bg-borderColor: rgba(0, 0, 0, 0.7);
+    --bg--homeIcon: #FFC107;
+}
+
+body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+}
+
+/* navbar */
+
+.nav-logo {
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.nav-menu {
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+}
+
+.nav-menu a:hover {
+    color: var(--bg--homeIcon) !important;
+}
+
+.nav-link,
+.navbar-brand {
+    color: var(--text-color) !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--text-color) !important;
+}
+
+.navbar-toggler {
+    background-color: white !important;
+}
+
+/* button */
+
+.btn-outline-warning {
+    color: var(--text-color) !important;
+}
+
+/* Home */
+
+.home-content h3 {
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+}
+
+.home-content h2 {
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content p {
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.social-icons a {
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.home-btn {
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: 2s;
+}
+
+/* About */
+
+
+.about-content h1 {
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.about-content p {
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.about-btn {
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: 2s;
+}
+
+/* Skills */
+
+.skill-content h1 {
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.skill-progress h5 {
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: 2s;
+}
+
+.skill-progress {
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: 2s;
+}
+
+/* projects */
+
+.border-color {
+    padding: 6% 6% 2% 6%;
+    background-color: var(--bg-borderColor) !important;
+}
+
+.project-icons {
+    color: var(--text-color);
+}
+
+.project-content h1 {
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.project-content p {
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.project-contentImg {
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: 2s;
+}
+
+/* contact */
+
+.Contact-bgcolor {
+    background-color: var(--bg-borderColor) !important;
+}
+
+.form-control {
+    background-color: transparent !important;
+    border: none !important;
+    color: var(--text-color) !important;
+}
+
+.contact-text {
+    color: var(--text-color) !important;
+}
+
+.contact-info{
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.contact-form{
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+/* NavBar */
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* Home */
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
