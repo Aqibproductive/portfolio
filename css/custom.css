@@ -87,6 +87,26 @@ body {
     animation-delay: 2s;
 }
 
+.social-icons a {
+    font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: var(--bg--homeIcon);
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  .social-icons a:hover {
+    background: var(--bg--homeIcon);
+    color: var(--bg-color);
+    text-decoration: none;
+  }
 /* About */
 
 
@@ -173,13 +193,13 @@ body {
     color: var(--text-color) !important;
 }
 
-.contact-info{
+.contact-info {
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
 }
 
-.contact-form{
+.contact-form {
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
