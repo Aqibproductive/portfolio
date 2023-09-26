@@ -205,6 +205,24 @@ body {
     animation-delay: 1s;
 }
 
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 7px 13px;
+    background-color: var(--bg--homeIcon);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#scrollToTopBtn:hover {
+    background-color: var(--bg-color);
+}
+
+
 /* NavBar */
 
 @keyframes slideRight {
