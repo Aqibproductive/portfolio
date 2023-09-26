@@ -205,6 +205,8 @@ body {
     animation-delay: 1s;
 }
 
+/* Scroll Btn */
+
 #scrollToTopBtn {
     display: none;
     position: fixed;

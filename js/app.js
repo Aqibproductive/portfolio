@@ -1,3 +1,5 @@
+// Scroll btn
+
 // Get a reference to the button element
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
